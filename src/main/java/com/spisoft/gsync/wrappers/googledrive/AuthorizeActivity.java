@@ -3,9 +3,8 @@ package com.spisoft.gsync.wrappers.googledrive;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
-public class AuthorizeActivity extends AppCompatActivity implements DriveSyncWrapper.OnConnectiongListener {
+public class AuthorizeActivity extends Activity implements DriveSyncWrapper.OnConnectiongListener {
 
     private DriveSyncWrapper mDriveWrapper;
 
