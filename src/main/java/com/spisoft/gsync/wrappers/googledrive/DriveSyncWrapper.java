@@ -170,7 +170,8 @@ public class DriveSyncWrapper extends SyncWrapper implements ResultCallback<Driv
     }
 
     @Override
-    public SynchroService.Result onFile(File file, String md5){
+    public SynchroService.Result onFile(File file){
+        String md5 = FileUtils.md5(file.getAbsolutePath());
         String relativePath = getRelativePathFromAbsolute(file.getAbsolutePath());
         metadataDownloadList.remove(relativePath); //won't need to download
         DBDriveFileHelper.DBDriveFile driveFile =DBDriveFileHelper.getInstance(mContext).getDBDriveFile(mAccountID, relativePath);

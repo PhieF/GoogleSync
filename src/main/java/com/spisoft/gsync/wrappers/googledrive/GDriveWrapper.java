@@ -3,6 +3,7 @@ package com.spisoft.gsync.wrappers.googledrive;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.drawable.Drawable;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -107,6 +108,11 @@ public class GDriveWrapper extends Wrapper {
     @Override
     public boolean internalRemoveSyncDir(String localPath) {
         return true;
+    }
+
+    @Override
+    public void updateDB(SQLiteDatabase db, int oldVersion, int newVersion) {
+
     }
 
     public int getAccountId() {
