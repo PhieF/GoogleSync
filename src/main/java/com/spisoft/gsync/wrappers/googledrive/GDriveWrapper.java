@@ -115,6 +115,16 @@ public class GDriveWrapper extends Wrapper {
 
     }
 
+    @Override
+    public boolean canChangeCredentials() {
+        return false;
+    }
+
+    @Override
+    public void deleteAccount() {
+
+    }
+
     public int getAccountId() {
         return mAccountId;
     }
