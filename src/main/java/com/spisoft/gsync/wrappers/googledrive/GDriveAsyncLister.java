@@ -1,7 +1,7 @@
 package com.spisoft.gsync.wrappers.googledrive;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.google.android.gms.drive.DriveFolder;
 import com.google.android.gms.drive.DriveId;
